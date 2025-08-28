@@ -4,8 +4,8 @@ from rag_utils import extract_text_from_pdf, chunk_text, build_faiss, retrieve_a
 
 # Page configuration
 st.set_page_config(
-    page_title="📄 PDF Q&A Assistant",
-    page_icon="📘",
+    page_title="PDF Q&A Assistant",
+    page_icon="📚",
     layout="wide"
 )
 
@@ -20,8 +20,23 @@ with st.sidebar:
     st.markdown("---")
     st.info("✅ After uploading, type your question in the main area below.")
 
-# Main UI
-st.title("📄 PDF-based Q&A Assistant")
+
+# Main interface
+
+# 🟦 Title & Subtitle (Centered)
+st.markdown(
+    """
+    <h1 style='text-align: center; color: #0078FF;'>
+        📚 Ask Your PDFs
+    </h1>
+    <h4 style='text-align: center; color: #5D6D7E;'>
+        Your personal document-based Q&A assistant
+    </h4>
+    """,
+    unsafe_allow_html=True
+)
+
+
 st.write("Upload PDFs from the sidebar and ask any question. Answers will be generated based on your uploaded documents.")
 
 # Process uploaded PDFs
