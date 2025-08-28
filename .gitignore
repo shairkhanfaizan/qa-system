@@ -1,0 +1,22 @@
+# Virtual environment
+venv/
+
+# Python cache & compiled files
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# Streamlit cache
+.streamlit/
+
+# Uploaded PDFs
+*.pdf
+
+# FAISS vectorstore files
+*.bin
+*.npy
+
+# PyTorch model weights (if any)
+*.pt
