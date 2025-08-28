@@ -1,7 +1,7 @@
 # Virtual environment
 venv/
 
-# Python cache & compiled files
+# Cache files
 __pycache__/
 *.pyc
 
@@ -11,12 +11,12 @@ __pycache__/
 # Streamlit cache
 .streamlit/
 
-# Uploaded PDFs
+# Ignore uploaded PDFs
 *.pdf
 
-# FAISS vectorstore files
+# Ignore FAISS & embeddings
 *.bin
 *.npy
 
-# PyTorch model weights (if any)
+# Ignore model weights if downloaded locally
 *.pt
